@@ -1,0 +1,306 @@
+:root {
+    --fondo: #f8f8f8;
+    --gorra: #ff217c;
+    --gorra-borde: #483c6c;
+    --pelo: #002339;
+    --boca: #ffff;
+    --pieluno: #f9c29b;
+    --pieldos: #fab097;
+    --pieltres: #f6937e;
+    --camiseta: #8b2396;
+    --camiseta-brazo: #71197a;
+    --pantalon: #149e9e; 
+    --pantalon-derecho: #2abbbb; 
+    --pantalon-izquierdo: #096e6e;   
+  }
+
+  * {   
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;      
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+  
+  
+  }
+
+  .head{
+    position: relative;
+  }
+
+  .cabeza{ 
+      position:relative;
+      width: 100px;
+      height: 100px;   
+      border-radius: 50%;
+      background-color: var(--pieluno);
+  }  
+
+  .gorra{
+    position:absolute;
+    width: 150px;
+    height: 100px;   
+    border: 3px solid var(--gorra-borde);
+    border-radius: 60px; 
+    background-color: var(--gorra);   
+    left: 65px;
+    transform: translate(-50%, -20%) rotateZ(-40deg);
+    z-index: -1;  
+  }
+
+  .oreja-izquierda{
+    position:absolute;
+    width: 30px;
+    height: 30px;   
+    border-radius: 50%;
+    background-color: var(--pieluno);
+    top: 35px;
+    transform: translate(-28%, 0)
+  }
+
+  .oreja-derecha{
+    position:absolute;
+    width: 30px;
+    height: 30px;   
+    border-radius: 50%;
+    background-color: var(--pieluno);
+    top: 35px;
+    transform: translate(265%, 0);    
+  }
+
+  .pelo{
+    position:absolute;
+    width: 35px;
+    height: 25px;   
+    border-radius: 50%;
+    background-color: var(--pelo);
+    left: 18px;
+    transform: translate(20px, -15px)
+  }
+
+  .pelo-dos{
+    position:absolute;
+    width: 18px;
+    height: 18px;   
+    border-radius: 50%;
+    background-color: var(--pelo);
+    left: 16px;
+    transform: translate(10px, -10px)
+  }
+
+  .ceja-izquierda{
+    position:absolute;
+    width: 20px;
+    height: 8px;   
+    border: 3px solid var(--pelo);
+    border-radius: 20px; 
+    background-color: var(--pelo);
+    left: 22%;
+    top: 18%;
+    transform: translate(0, -50%);
+  }
+
+  .ceja-derecha{
+    position:absolute;
+    width: 20px;
+    height: 8px;   
+    border: 3px solid var(--pelo);
+    border-radius: 20px; 
+    background-color: var(--pelo);
+    left: 55%;
+    top: 18%;
+    transform: translate(0, -50%);
+  }
+
+
+  .ojo-izquierdo{
+    position:absolute;
+    width: 13px;
+    height: 6px;   
+    border: 3px solid var(--pelo);
+    background-color: var(--pelo);   
+    border-radius: 20px; 
+    left: 25%;
+    top: 30%;
+    transform: translate(0, -50%);
+  }
+
+  .ojo-derecho{
+    position:absolute;
+    width: 13px;
+    height: 6px;   
+    border: 3px solid var(--pelo);
+    background-color: var(--pelo);   
+    border-radius: 20px; 
+    left: 60%;
+    top: 30%;
+    transform: translate(0, -50%);
+  }
+
+  .boca{
+    position:absolute;
+    width: 72px; 
+    height: 40px; 
+    top: 37%;
+    left: 13%;    
+    background-color: var(--boca);
+    border-radius: 0 0 100px 100px;
+  }
+
+  .cuello{
+    position:absolute;
+    width: 90px;
+    height: 25px;   
+    border: 3px solid var(--pieluno);
+    border-radius: 60px; 
+    background-color: var(--pieldos);   
+    left: 50%;   
+    top: 60%;
+    transform: translate(-50%, 0) rotateZ(-90deg);
+    z-index: -2;
+ 
+  }
+
+  .cuerpo{
+    position: relative;
+  }
+
+  .tronco{   
+    position: absolute;
+    width: 80.12px;
+    height: 56.72px;
+    background-color: var(--camiseta);
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    bottom: -0.5em;
+    transform: translate(-50%, 0%);
+    border-radius: 2.5em 2.5em 0.64em 0.64em;   
+    z-index: -3;
+}
+
+.brazo-izquierdo{   
+  position: absolute;
+  width: 43.12px;
+  height: 26.72px;
+  background-color: var(--camiseta-brazo);
+  position: absolute;
+  transform: translate(-25%, 25%) rotateZ(30deg);
+  border-radius: 1.57em 1.57em 0.64em 0.64em;   
+  z-index: -4;
+}
+
+.mano-izquierda{   
+  position:absolute;
+    width: 100px;
+    height: 20px;   
+    border: 3px solid var(--pieluno);
+    border-radius: 60px; 
+    background-color: var(--pieldos);   
+    left: 5%;   
+    transform: translate(-50%, 280%) rotateZ(-90deg);
+    z-index: -5;
+}
+
+.mano-derecha{   
+  position:absolute;
+    width: 100px;
+    height: 20px;   
+    border: 3px solid var(--pieluno);
+    border-radius: 60px; 
+    background-color: var(--pieldos);   
+    left: 5%;   
+    transform: translate(40%, 280%) rotateZ(-90deg);
+    z-index: -5;
+}
+
+.brazo-derecho{   
+  position: absolute;
+  width: 43.12px;
+  height: 26.72px;
+  background-color: var(--camiseta-brazo);
+  position: absolute;
+  transform: translate(160%, 25%) rotateZ(-380deg);
+  border-radius: 1.57em 1.57em 0.64em 0.64em;   
+  z-index: -4;
+}
+
+.pantalon {
+  position: absolute;
+  width: 68.12px;
+  height: 60.72px;
+  background-color: var(--pantalon);
+  position: absolute;
+  left: 50%;
+  top: 35px;
+  bottom: -0.5em;
+  transform: translate(-50%, 0%) rotateZ(180deg);
+  border-radius: 2.5em 2.5em 0.64em 0.64em;   
+  z-index: -4;
+}
+
+.pantalon-izquierdo {
+  position: absolute;
+  width: 35px; 
+  height: 45px;  
+  background-color: var(--pantalon-izquierdo);
+  transform: translate(45%, 135%);
+  z-index: -5;
+}
+
+.pantalon-derecho {
+  position: absolute;
+  width: 35px; 
+  height: 45px;  
+  background-color: var(--pantalon-derecho);
+  transform: translate(140%, 135%);
+  z-index: -5;
+}
+
+.pierna-izquierda{   
+  position:absolute;
+    width: 70px;
+    height: 25px;   
+    border: 3px solid var(--pieluno);
+    border-radius: 60px; 
+    background-color: var(--pieltres);   
+    left: 5%;   
+    transform: translate(-4%, 400%) rotateZ(-90deg);
+    z-index: -6;
+}
+.pierna-derecha{   
+  position:absolute;
+    width: 70px;
+    height: 25px;   
+    border: 3px solid var(--pieluno);
+    border-radius: 60px; 
+    background-color: var(--pieldos);   
+    left: 5%;   
+    transform: translate(28%, 400%) rotateZ(-90deg);
+    z-index: -6;
+}
+
+.pies{
+  position:absolute;
+  width: 100px;
+  height: 12px;   
+  border: 3px solid var(--pelo);
+  border-radius: 20px; 
+  background-color: var(--pelo);
+  left: 50%;
+  top: 140px;
+  transform: translate(-50%, 10%); 
+}
+   
+   
+   
+  
